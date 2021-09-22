@@ -1,0 +1,27 @@
+input[type=text] {
+    background-color: transparent;
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    border: none;
+    border-bottom: solid 1px #392454;
+    padding: 15px;
+    color: #6536a2;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #6536a2;
+    opacity: 1;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #6536a2;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #6536a2;
+}
