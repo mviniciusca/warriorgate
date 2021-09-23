@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    background-color: rgb(30 28 43);
+    background-color: #312a3e;
     font-family: 'Roboto Mono', monospace;
     font-size: 82.5%;
     color: #6536a2;
@@ -120,4 +120,79 @@ li {
     margin: 2px;
     font-weight: bolder;
     float: right;
+}
+
+
+/** Pages : Login **/
+
+.login-wrapper {
+    display: grid;
+    grid-template-columns: .6fr 1fr;
+}
+
+.login-box {
+    display: grid;
+    height: 100vh;
+}
+
+#login-box-b {
+    background-color: white;
+}
+
+.login-logo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.login-logo>img {
+    max-width: 120px;
+    max-height: 122px;
+}
+
+.login-form {
+    max-width: 540px;
+    padding: 30px;
+    margin: auto;
+}
+
+.login-titulo {
+    padding-bottom: 3rem;
+    font-size: 1.7rem;
+}
+
+
+/** Media **/
+
+@media (max-width:680px) {
+    .login-wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.7fr 1fr;
+        background-color: white;
+        height: 100vh;
+        text-align: center;
+    }
+    .login-box {
+        display: grid;
+        width: 100vw;
+        height: auto;
+    }
+    #login-box-a {
+        order: 1;
+        background-color: white
+    }
+    #login-box-b {
+        order: 2;
+        background-color: white;
+    }
+    .login-logo {
+        justify-items: center;
+        align-items: center;
+    }
+    .login-logo>img {
+        max-width: 80px;
+        max-height: 82px;
+        margin-top: 5%;
+    }
 }
