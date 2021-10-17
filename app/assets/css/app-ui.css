@@ -1,0 +1,35 @@
+/** Forms **/
+
+label {
+    font-size: .8rem;
+}
+
+input[type="text"] {
+    width: 99%;
+    background-color: var(--lighter-color);
+    border: solid 1px var(--light-color);
+    outline: none;
+    height: 50px;
+    margin-bottom: 15px;
+    font-family: 'Roboto Mono', 'Open Sans', sans-serif;
+    color: var(--dark-color);
+    font-size: 1rem;
+    box-shadow: 7px 8px 0px -3px rgb(0 0 0 / 12%);
+}
+
+input[type="text"]:focus {
+    box-shadow: 7px 8px 0px -3px rgb(0 0 0 / 3%) inset;
+}
+
+button {
+    padding: 10px;
+    font-family: 'Roboto Mono', 'Open Sans', sans-serif;
+    color: var(--lighter-color);
+    background-color: var(--primary-color);
+    border: solid 1px var(--darkest-color);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}

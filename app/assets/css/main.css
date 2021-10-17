@@ -1,0 +1,110 @@
+/**
+WarriorGate - Dashboard 
+Marcos Coelho
+2021
+*/
+
+
+/** Imports => UI **/
+
+@import url('../css/app-ui.css');
+
+/** Imports => Fonts **/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/** Root **/
+
+:root {
+    --primary-color: #2b3361;
+    --secondary-color: #43495f;
+    --light-color: #e7e9f7;
+    --lighter-color: #f8f9ff;
+    --dark-color: #1e2233;
+    --darkest-color: #121420;
+    --text-primary-color: rgb(236, 236, 236);
+    --info-color: #6e7cc0;
+    --alert-color: #ebba60;
+    --danger-color: #dd462b;
+    --success-color: #4dd175;
+}
+
+
+/** Main **/
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: var(--light-color);
+    color: var(--dark-color);
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.6rem;
+}
+
+.container {
+    display: grid;
+}
+
+
+/** Login Page **/
+
+.login-wrapper {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    background-color: var(--light-color);
+}
+
+.login {
+    display: grid;
+    grid-template-rows: .4fr .5fr 1fr;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+    max-width: 480px;
+    min-height: 480px;
+    max-height: 680px;
+    background-color: var(--lighter-color);
+    box-shadow: 0px 40px 5px -25px rgb(0 0 0 / 10%);
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+#logo-img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.login-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4em;
+    color: var(--primary-color);
+    letter-spacing: -.1rem;
+    padding: 15px;
+}
+
+.login-form {
+    display: subgrid;
+    align-content: center;
+}
