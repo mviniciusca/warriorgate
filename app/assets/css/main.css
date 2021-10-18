@@ -18,9 +18,11 @@ Marcos Coelho
 
 :root {
     --primary-color: #2b3361;
-    --secondary-color: #43495f;
+    --secondary-color: #565d75;
     --light-color: #e7e9f7;
     --lighter-color: #f8f9ff;
+    --shadow-color: #f0f2ff;
+    --overshadow-color: #c3c8e3;
     --dark-color: #1e2233;
     --darkest-color: #121420;
     --text-primary-color: rgb(236, 236, 236);
@@ -28,6 +30,10 @@ Marcos Coelho
     --alert-color: #ebba60;
     --danger-color: #dd462b;
     --success-color: #4dd175;
+}
+
+.success {
+    background-color: var(--secondary-color);
 }
 
 
@@ -46,8 +52,16 @@ body {
     background: var(--light-color);
     color: var(--dark-color);
     font-family: 'Roboto Mono', sans-serif;
-    font-size: 1.3em;
-    line-height: 1.6rem;
+    font-size: 1.2em;
+    line-height: 1.4rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
 }
 
 .container {
@@ -107,4 +121,155 @@ body {
 .login-form {
     display: subgrid;
     align-content: center;
+}
+
+
+/** Main Dashboard **/
+
+.app-wrapper {
+    display: grid;
+    grid-template-columns: 100px auto 240px;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/** Sidebar & Nav Menu **/
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    justify-content: center;
+    background-color: var(--lighter-color);
+    color: var(--lighter-color);
+    font-size: .8rem;
+}
+
+.sidebar .logo {
+    display: flex;
+    max-width: 50px;
+}
+
+.menu-icons {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.sidebar li {
+    padding: 15px;
+    color: var(--primary-color);
+    font-size: 1.9rem;
+    line-height: 2rem;
+}
+
+.sidebar li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+/** Menu Order **/
+
+#new-project {
+    order: 1;
+}
+
+#files {
+    order: 2;
+}
+
+#mail {
+    order: 2;
+}
+
+#settings {
+    order: 5;
+}
+
+#profile {
+    order: 4;
+}
+
+#logout {
+    order: 6;
+}
+
+
+/** Content **/
+
+.content {
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/** Hidden Components **/
+
+.hc-wrapper {
+    display: flex;
+    align-items: flex-start;
+    max-width: 800px;
+}
+
+
+/** UI Dashbaord **/
+
+
+/** Main Card **/
+
+.card {
+    font-size: .9rem;
+    border-radius: 4px;
+    background-color: var(--lighter-color);
+    display: grid;
+}
+
+.card-header {
+    padding: 30px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    padding: 30px;
+    background-color: var(--shadow-color);
+}
+
+
+/** Profile Card **/
+
+.profile-card {
+    max-width: 410px;
+    display: grid;
+}
+
+.card-header li#avatar {
+    height: 80px;
+    width: 80px;
+    border: solid 7px var(--lighter-color);
+    background-color: var(--light-color);
+    border-radius: 100%;
+    margin-top: -60px;
+}
+
+li#card-title {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: lowercase;
+    padding-top: 15px;
+}
+
+
+/** Quickview **/
+
+.quickview {
+    background-color: var(--lighter-color);
+    padding: 15px;
 }

@@ -4,17 +4,18 @@ label {
     font-size: .8rem;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
     width: 99%;
     background-color: var(--lighter-color);
-    border: solid 1px var(--light-color);
-    outline: none;
     height: 50px;
-    margin-bottom: 15px;
-    font-family: 'Roboto Mono', 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    font-family: "Roboto Mono", "Open Sans", sans-serif;
     color: var(--dark-color);
     font-size: 1rem;
-    box-shadow: 7px 8px 0px -3px rgb(0 0 0 / 12%);
+    border: solid 1px var(--overshadow-color);
+    outline: none;
+    border-radius: 4px;
 }
 
 input[type="text"]:focus {
@@ -26,10 +27,19 @@ button {
     font-family: 'Roboto Mono', 'Open Sans', sans-serif;
     color: var(--lighter-color);
     background-color: var(--primary-color);
-    border: solid 1px var(--darkest-color);
+    border: solid 1px rgb(0 0 0 / 15%);
     cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 7px 8px 0px -3px rgb(0 0 0 / 12%);
 }
 
 button:hover {
     opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.5;
 }

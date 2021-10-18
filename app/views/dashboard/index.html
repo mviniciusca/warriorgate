@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warriorgate - Login </title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <div class="sidebar">
+            <div class="logo"><img src="../../assets/img/logo.svg" alt=""></div>
+            <nav class="menu-icons">
+                <li id="new-project">
+                    <ion-icon name="add-outline"></ion-icon>
+                </li>
+                <li id="files">
+                    <ion-icon name="folder-outline"></ion-icon>
+                </li>
+                <li id="mail">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </li>
+                <li id="settings">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </li>
+                <li id="profile">
+                    <ion-icon name="person-outline"></ion-icon>
+                </li>
+                <li id="logout">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                </li>
+            </nav>
+        </div>
+        <main class="content">
+            <!--Hidden Components-->
+
+
+
+            <!-- Profile -->
+
+            <div class="hc-wrapper animate__animated animate__fadeInUp">
+                <div class="card profile-card">
+                    <div class="card-header">
+                        <li id="avatar"></li>
+                        <li id="card-title">
+                            marcos coelho
+                        </li>
+                        <li id="username">admin</li>
+
+                    </div>
+                    <div class="card-body">
+                        <h3>suas informações</h3>
+
+                        <p></p>
+
+                        <span id="form">
+                            <input placeholder="nome" type="text">
+                            <input placeholder="username" type="text">
+                            <input placeholder="passcode" type="password">
+                            <input placeholder="email" type="text">
+                        </span>
+
+
+
+
+
+
+                    </div>
+                    <div class="card-footer">
+                        <button class="success"><ion-icon name="checkmark-done-outline"></ion-icon> salvar</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Hidden Components-->
+        </main>
+        <div class="quickview"></div>
+    </div>
+    <!-- Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
